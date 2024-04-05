@@ -1,0 +1,28 @@
+ul{
+    list-style-type: none; 
+}
+body{
+    background-image:url(../img/bg-body.png);
+}
+.header.nav{
+    color: #444;
+    text-decoration: #666;
+}
+.footer.nav.ul{
+
+}
+article p.boton{
+    color: #666;
+    background-color: #444;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    align-self: ;
+}
+header.div.log.reg{
+    justify-content: end;
+}
+header img{
+    border-radius: 90%;
+    border-color: #666;
+}

@@ -1,0 +1,38 @@
+p {
+    color: rgb(104, 64, 13);
+}
+
+h1 {
+    font-weight: 100;
+    background-color: rgb(200, 137, 48);
+}
+body{
+    background-color: red;
+}
+body{
+    background-color: yellow;
+}
+body{
+    background-color: antiquewhite;
+}
+.title{
+    font-size: 52px;
+}
+.title{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h2{
+    background-color: black;
+}
+h2{
+    color: white;
+}
+body{
+    font-family:Roboto;
+}
+background-image{
+    background-image:url("");
+}

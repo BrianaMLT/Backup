@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+/*The box-sizing property can be used to adjust this behavior
+ tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+body {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: blueviolet;
+    border: 5px solid palegreen;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid lightskyblue;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+.k {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    margin: 0 2;
+}
+.caja-a{
+    width: 25%;
+    border: 5px solid rgb(57, 54, 54);
+    background-color: orchid;
+}
+.caja-b{
+    width: 80%;
+    margin: 0 5%;
+    background-color: lightsalmon;
+    border: 5px solid rgb(57, 54, 54);
+}
+.caja-c{
+    width: 10%;
+    border: 5px solid rgb(57, 54, 54);
+    background-color: rgb(242, 242, 63);
+}
+h2{
+    text-align: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+@media (max-width:900px) {
+    .container {
+        padding: 20px;  
+        width: 95%; 
+    }
+    .caja-a {
+        width: 40%; 
+    }
+    .caja-b {
+        width: 55%; 
+        margin: 0; 
+    }
+    .caja-c {
+        width: 100%; 
+    }
+    .caja-a, .caja-b, .caja-c {
+        height: 100px; 
+    }
+}
+@media (max-width: 450px){
+    .container {
+        width: 100%; 
+        padding: 0; 
+    }
+    .caja-a, .caja-b, .caja-c {
+        width: 100%; 
+        height: calc(20vh - 20px);}
+    }        

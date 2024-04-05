@@ -1,0 +1,50 @@
+a{
+    text-decoration: none;
+}
+body, h3, p{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.Personajes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(162,113,207,0.691);
+    padding: 15px;
+    height: 650px;
+    box-sizing: border-box;
+}
+.Personajes article{
+    /* flex: 1; */
+    text-align: center;
+    background-color: rgba(122, 230, 194, 0.787);
+    margin: 20px;
+    padding: 15px;
+    width: 150px;
+}
+.Personajes img{
+    max-width: 50%;
+    /* background-color:rgba(122, 230, 194, 0.787); */
+    /* margin: 100px; */
+}
+.igual.fiona{
+    order: -2; 
+    align-self: flex-start;
+    align-self: stretch;
+}
+
+.igual.shrek{
+    order: 1;
+}
+.igual.Pinochio{
+    align-self: flex-start;
+}
+.igual.Botas{
+    order: -2;
+    align-self: self-end;
+}
+*{
+    box-sizing: border-box;
+}
