@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+<!-- Cuerpo base con sementicas correspodientes-->
+    <header>
+        <nav>
+            <ul>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+
+    <form action="result.html" method="get"> <!-- siempre asi, todv no sabe el porque -->
+
+        <label>Nombre</label>
+        <input type="text" name="" value="">
+
+        <label>Email</label>
+        <input type="email" name="" value="email del usuario"> <!-- si o si necesito un arroba -->
+        
+        <label>Numero</label>
+        <input type="number" name="" value="numero de cel."> <!-- solo numeros  -->
+
+        <label>Password</label>
+        <input type="password" name="" value="su password"> <!-- lo q queda no se muestra -->
+
+        <!-- Name es IMPORT. 
+        Value: inicial, siempre estara vacio, en text.
+        Label, arriba del input. 
+        placeholder: se ultiza para detrminar que va dentro del cuadro. -->
+
+        <button type="reset">borrar</button>
+        <button type="submit">enviar</button>
+
+       <!--  ETIQUETAS PRINCIPALES
+        Cada input y label, va dentro de un DIV. Para mantener una estetica, arriba del otro. -->
+        
+    </form> 
+
+    <!-- RADIO BUTTOMS -->
+
+    <form>
+        <input type="radio" name="evento" value="no">
+        <label>no</label>
+        <input type="radio" name="evento" value="si">
+        <label>si</label>
+
+    <!-- CHECKBOX -->
+
+        <input type="checkbox" name="habits" value="futbol">
+        <label>futbol</label>
+        <input type="checkbox" name="evento" value="tennis">
+        <label>tennis</label>
+
+       <!--  Por estetica, ahora ponemos el label abajo. -->
+    </form>
+
+    <!-- AREA DE TEXTO -->
+    
+        <form>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+   <!-- SELECT-->
+            <select name="deporte">
+                <option value="futbol">futbol</option>
+                <option value="tennis">tennis</option>
+                <option value="basket">basket</option>
+
+            </select>
+        </form> 
+</body>
+</html>
