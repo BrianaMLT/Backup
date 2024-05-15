@@ -46,8 +46,15 @@ let precioProducto = 5000
 console.log(precioFinal(precioProducto));
 
 function mitad(numero) {
-    let p=50
-    return pMitad = 50 / 2
+    return numero / 2
 }
 
-console.log(numero);
+console.log(mitad(50));
+
+function diaSegunNumero(array, numero) {
+    let diasSemana= ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+    let nu
+    return diaSegunNumero[diasSemana];
+}
+let 
+//console.log(diaSegunNumero);
