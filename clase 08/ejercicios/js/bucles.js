@@ -57,7 +57,7 @@ let healingIsDifficult = [
     'Little Man',
     'Insidiously'
     ]
-    
+
 for (let i = 0; i < healingIsDifficult.length; i++) {
     console.log(healingIsDifficult [i]);
 }
