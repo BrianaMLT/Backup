@@ -29,6 +29,7 @@ titulo.addEventListener("mouseout", function () {
 //preventDefault: ciertas acciones como x ejemplo los forms, que se envian vacios. 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //API: Sistema de intermcabio de informacion entre aplicaciones. Biblioteca qe tinee info que voy a usar en mi pagina
 //JSON: un formato de intercmbio de dstos, es una cadena de textos "objeto literal"
 
@@ -39,5 +40,13 @@ titulo.addEventListener("mouseout", function () {
 
 fetch("https://rickandmortyapi.com/api/character/1")
     .then(function (res) {
-        return res.json()
+        return res.json()//transforma a un tipo de dato manejable 
+    })
+    .then (function (data) {
+        console.log(data);
+        let personaje= document.querySelector("#personaje")
+        personaje.innerHTML = `<h2>${data.name}</h2> <img src="${data.image}">`
+    })
+    .catch(function (err) {
+        console.log(err);
     })
