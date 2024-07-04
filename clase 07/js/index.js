@@ -7,8 +7,6 @@
 //tratar de que tengan el mismo nombre, el html con css
 //?POR QUE? xq puede ser que en el mismo trabajo tengamos diferentes js's con diferentes html's
 
-
-
 //COMIENZO NORMAL DE TODO JS
 
 console.log ("Hola como estan?")

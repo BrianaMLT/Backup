@@ -53,7 +53,8 @@ if (edadUser <= 13) {
 }
 
 
-//OPERADORES: manipulan el valor de las variables, que es? un >,+,=, etc.
+//OPERADORES: manipulan el valor de las variables, que es? 
+//un >,+,=, etc.
 
 //idualdad 
 

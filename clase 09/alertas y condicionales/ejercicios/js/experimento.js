@@ -6,7 +6,7 @@ let edad= prompt("Ingrese su edad")
 
 console.log(edad);
 
-let fanDeportes= confirm ("Te gustan los deportes?")
+let fanDeportes= confirm("Te gustan los deportes?")
 
 console.log(fanDeportes);
 
