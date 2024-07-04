@@ -1,0 +1,7 @@
+PROTOCOLO HTTP
+Protocolo de trnasferencia de hipertexto: permite la transefrencia de info entre cliente y servidor
+
+establece la forma que tiene q tner la request y la response
+
+1. metodo: get traer datos, post guardar datos, etc. Que accion queremos que haga.HTTP
+

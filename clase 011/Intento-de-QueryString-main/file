@@ -1,0 +1,94 @@
+THEORY OF CLASS 11
+
+THEME: Arquitectura cleinte-servidor
+-comunicacion entre ambas partes.
+
+el clinete no es el usario en si, sino el disposotivo. 
+servidor: el equipo q responde al pedido dle cliente. Muchas veces el = equipo es ambos.
+
+tenemos REQUEST AND RESPONSE
+
+=HTTP
+aruitectuta de comunciaicon entre ambas partes, con este protocolo. Y la S hac referenicia a la seguridad.
+
+Dfine serie de reglas a respetar p/ q la com,mnuica pued darse entre ;artes. 
+
+PROTOCOLO HTTP
+Protocolo de trnasferencia de hipertexto: permite la transefrencia de info entre cliente y servidor
+=set os fules. 
+=establece la forma que tiene q tner la request y la response
+
+1. metodo: get traer datos, post guardar datos, etc. Que accion queremos que haga.HTTP
+   target:
+   version:
+
+2.
+
+las peticuiones x get, permiten el uso de querystings.
+formada por "?" y clave valor
+
+?como envio data x el? hipervinculos o forms
+1. complatar en href...?id=32
+2. en etiquta form completar methodo c/ GET + action 
+los datos vijan de a pares, clve=name y valor=c/ lo q ponga el user.
+
+
+=codigos de estado: simpre en forma de response es en codigo.
+3 cifras: 
+1--
+2--
+3--
+4-- errores del cliente
+5-- errores del servidor
+
+CAPA S
+
+PERMITE: transferenica de informacion en la web a trves dde direcciones web o urls.
+
+URL; formada x mhcua info.
+es una cadena de strings que a partir del signo de pregunta, nos proporciona la querztrign
+
+get: ves en a la vista la info. 
+post: no ves la informacion
+
+-QueryString: cadena de texto. viaja x el methodo get.
+
+simpre tiene dos cosas:
+clave y valor, casos hay mas de dos, mas carcaterustucas. Y se van concatenendo por el AND.
+
+?como envimaos datos?
+c/ hipervinuculos y forms, x el methodo get. 
+
+clave lo que diga el name. 
+value depdne de q lo pongamos
+
+?como botenemos esos datos?
+
+con >>> -Objeto Local es un objeto literal, al cual acceoo a sus propiedasdes. 
+
+ej: href, search, etc. 
+
+LOCATION SEARCH
+
+1   location.search retorna info, en cadena de texto, complica todo. Pero c/ js la volvemos un objeto literal + metodos p/ manipularla. 
+2 new  URLSearchParams (1) define metods utiles p/ trabahar bien.  
+3 metodo .get() permite obtner el valor de la clave
+
+
+WEB STORAGE
+
+dos formas diferentes: 
+local: objeto literal, se setean propiedades y valores, almacena solo stings, se gurda x dominio y navegador. 
+=metodos: setitem, getitem, removeitem, clear. 
+
+session: mismas caractistas, pero, borra la ifo dsp de haber cerrado la sesion. pierdes todo. Y tiene tmb los miksmos metodos. 
+
+json: es todo con comillas. es como zip. q va con formato ligero. 
+
+strngy: toma a un bjeto tirela y lo trnaforma a formato json. todo lo vielve stirng mhci lmas ligeri
+
+perse: al reves, de json lohace objeto literal. 
+
+?como los recupero?
+
+si de json lo convierto a algo de js.
