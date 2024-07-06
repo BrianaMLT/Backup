@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje 3</title>
+</head>
+<body>
+    <script>
+        //Guardando un array.
+        //queremos guardar un array en localStorage,es posible? 
+        let elementos= ["pistola", "arma", "cuchillo"];
+        localStorage.setItem("elementos", JSON.stringify(elementos));
+        //o tmb, 
+        //let peliculasJson= JSON.srtingify(elementos)
+        console.log(elementos, localStorage);
+
+        let usables= JSON.parse(localStorage.getItem("elementos"));
+        console.log(usables);
+
+        usables.push("Metralleta")
+
+        localStorage.setItem("elementos", JSON.stringify(usables))
+        console.log(usables);
+
+        
+    </script>
+</body>
+</html>

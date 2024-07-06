@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            //vamoss a obtener un string que esta dentro de un array y lo guardammos en localStorage
+            
+            let peliculasFavs= ["Sinsajo", "Hunger Games", "Avengers"]
+            localStorage.setItem("peliculasFavas", peliculasFavs[1]);
+            // o tmb:
+            //var 2daPeli= peliculasFavs[1];
+            //localStorage.setItem("peliculasFavas", 2daPeli);
+            
+            console.log(localStorage);
+
+            let recuperoStorage= localStorage.getItem("peliculasFavas")
+            console.log(recuperoStorage);
+            
+            localStorage.clear(); 
+        </script>
+    </body>
+</html>

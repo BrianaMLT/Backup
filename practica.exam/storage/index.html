@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <script>
+        console.log(Storage);
+        
+        //asignatr elementos
+        let cursos= ["PHP", "Jave", "C#", "JS"];
+        //localStorage.setItem("cursos", cursos)
+        localStorage.setItem("cursos", JSON.stringify(cursos))//trnasforma el objeto/array en cadena de texto formato json 
+        localStorage.canal= "bruanan";
+
+        //leer elementos almacenados
+        //console.log(localStorage.getItem("cursos"));
+        let cursosAlmacenados= JSON.parse(localStorage.getItem("cursos"))// del json lo vulve tipo de dato js
+        console.log(cursosAlmacenados);
+
+        //eliminar un elemnto
+        localStorage.removeItem("canal");
+
+        //eleminar todo
+        localStorage.clear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games of Thrones</title>
+</head>
+<body>
+    <script>
+        //objetivo: lograr que personajes queden guardados en un array dentro del LocalStorage.
+            let got = [
+        {
+            nombre: "Jon",
+            apellido: "Snow",
+            edad: 23,
+            ciudad: "Winterfell"
+        },
+        {
+            nombre: "Daenerys",
+            apellido: "Targaryen",
+            edad: 19
+        },
+        {
+            nombre: "Arya",
+            apellido: "Stark",
+            edad: 12,
+            ciudad: "Winterfell"
+        },
+        {
+            nombre: "Tyrion",
+            apellido: "Lannister",
+            edad: 32,
+            ciudad: "Casterly Rock"
+        }
+    ];
+        
+        let winterlsComing= [];
+        
+        for (let i = 0; i < got.length ; i++) {
+            //console.log(got)
+            let personaje= got[i];
+
+            if(personaje.ciudad === "Winterfall"){
+                winterlsComing.push(personaje);
+            }
+        }
+        console.log(winterlsComing);
+    </script>
+</body>
+</html>
