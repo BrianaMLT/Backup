@@ -17,7 +17,6 @@ campoNombre.addEventListener(`input`, function () {//se verifica cunado cmabia e
 
 //submit, se verifca en el meonto en quqe se envia. 
 
-//
 let form= document.querySelector(`form`)//captura toda etiqueta formulRIO
 
 form.addEventListener(`submit`, function (e) {

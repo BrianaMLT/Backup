@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Practica</title>
+</head>
+<body>
+    <article>
+        <h2 id="nombre">Nombre:</h2>
+        <p id="age">Edad:</p>
+        <p id="city">Ciudad:</p>
+    </article>
+    <script>
+
+        let nombre= document.querySelector("#nombre");
+        let age= document.querySelector("#age");
+        let city= document.querySelector("#city");
+        
+        //getting data from local storage
+        
+        //storing and setting objects
+        let person = {
+            name: "John Doe",
+            age: 30,
+            city: "New York"
+        };
+        localStorage.setItem("person", JSON.stringify(person)); 
+        
+        //retrieving and displaying objects
+        let retrievedPerson = JSON.parse(localStorage.getItem("person"));
+        console.log(retrievedPerson);
+
+        //update html
+        nombre.textContent+= retrievedPerson.name;
+        age.textContent+= retrievedPerson.age;
+        city.textContent+= retrievedPerson.city;
+    </script>
+</body>
+</html>

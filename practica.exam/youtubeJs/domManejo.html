@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cambiar el dom desde JS</title>
+        <style>
+            .btn{
+                border: none;
+                background-color: black;
+                color: white;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: bold;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .whiteish{
+                background-color: rgb(209, 207, 207);
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Youtube Subscribe Button/Amazon Shipping Calculator</p>
+        <button class="btn">Subscribe</button>
+
+        <p>Amazon Shipping Calculator</p>
+
+        <input type="text" name="" id="input" placeholder="Cost of Order" onkeydown="
+        handleCost(event);
+        ">
+        <button onclick="
+        calc();
+        ">Calcualte</button>
+        <p class="total-cost"></p>
+
+        <script>
+            let btn= document.querySelector('.btn')
+            btn.addEventListener("click", function (e) {
+                e.preventDefault
+
+                if(btn.innerText === "Subscribe"){
+                    btn.innerHTML = "Subscribed"
+                    btn.classList.add('whiteish');
+                }else {
+                    btn.innerHTML= "Subscribe"
+                    btn.classList.remove('whiteish');
+                }
+                
+            })
+
+            function handleCost(event) {
+                if(event.key === 'Enter'){
+                    calc();
+                }
+            }
+            function calc(){
+                let input= document.querySelector("#input");
+                let cost= Number(input.value);
+
+                if (cost < 40 ){
+                    cost= cost + 10;
+                }
+
+                document.querySelector(".total-cost").innerHTML= `$${cost}`
+            }
+            //let btn2= document.querySelector(".amz");
+
+        </script>
+    </body>
+</html>

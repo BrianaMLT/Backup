@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store</title>
+    </head>
+    <body>
+        <script>
+            //usuarios agregan productos a un carrito de compras y deseas almacenar estos en localStorage para que persistan entre sesiones del usuario.
+            //ESTRUCTURA DE PRODUCTOS
+            let productos = [
+                {
+                    id: 1,
+                    nombre: "Producto 1",
+                    precio: 100,
+                    cantidad: 1
+                },
+                {
+                    id: 2,
+                    nombre: "Producto 2",
+                    precio: 200,
+                    cantidad: 1
+                },
+                {
+                    id: 3,
+                    nombre: "Producto 3",
+                    precio: 300,
+                    cantidad: 1
+                }
+            ];
+            //ESTRUCTURA DE CARRITO DE COMPRAS
+            let carrito = [];
+            //ESTRUCTURA DE COMPRAS
+            let compras = [];
+            //FUNCION P/ AGREGAR PRODUCTOS AL CARRITO.
+            function agregarAlCarrito(producto) {
+                let carrito= JSON.parse(localStorage.getItem("carrito")) || [];
+                
+                //adding product
+                carrito.push(producto);
+
+                //Guardar el carrito actualizado en localStorage
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+            }
+        </script>
+    </body>
+</html>
