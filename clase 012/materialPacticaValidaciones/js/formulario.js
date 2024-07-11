@@ -20,7 +20,10 @@ form.addEventListener("submit", function (e) {
     //objetivo de esta práctica es validar completamente el formulario presente en el archivo html.
 
     //limpiar los mensajes de error
-    msgError.forEach(msg => msg.style.display = "none");
+    //msgError.forEach(msg => msg.style.display = "none");
+    for (let i = 0; i < msgError.length; i++) {
+        msgError[i].style.display = "none";
+    }
     errName.innerHTML= '';
     errEmail.innerHTML= '';
     errCelu.innerHTML= '';

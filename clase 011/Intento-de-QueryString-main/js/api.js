@@ -8,13 +8,14 @@ fetch("https://rickandmortyapi.com/api/character")
 
         let personaje = document.querySelector(".characterList")
         let personjaesRecorridos= ``
+        let info= data.results;
         
-        for (let i = 0; i < data.results.length; i++) {
-            personjaesRecorridos= personjaesRecorridos + `<article>
-                ////////////////<a href="./detalle.html?id=${data.results[i].id}">///////////
-                                <img src=${data.results[i].image}>
+        for (let i = 0; i < info.length; i++) {
+            personjaesRecorridos+= `<article>
+                ////////////////<a href="./detalle.html?id=${info[i].id}">///////////
+                                <img src=${info[i].image}>
                                 </a>
-                                <h2>${data.results[i].name}</h2>
+                                <h2>${info[i].name}</h2>
                             </article>`
         }
         

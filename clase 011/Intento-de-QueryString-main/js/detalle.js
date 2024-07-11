@@ -14,6 +14,7 @@ fetch(`https://rickandmortyapi.com/api/character/${id}`)
         return res.json()
     })
     .then(function (data) {
+        console.log(data);
         let section= document.querySelector("section")
         section.innerHTML= `<h2 class="nombre">${data.name}</h2>
         <img src=${data.image} alt="" class="img"> 
