@@ -39,7 +39,7 @@ let got = [
 
 console.log(got);
 
-let personaje= [];
+//let personaje= [];
 
 function soloNombres(personaje) {
     let nombres = []; // Iniciamoss un array vacio para coleccionaar los nombres

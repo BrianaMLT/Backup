@@ -2,7 +2,7 @@ let search= location.search
 console.log(search);
 
 let queryString= new URLSearchParams(search)
-//log opcional
+console.log(queryString);
 
 let buscado= queryString.get (`q`)//value
 console.log(buscado);

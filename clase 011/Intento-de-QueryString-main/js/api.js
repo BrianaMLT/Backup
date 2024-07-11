@@ -11,7 +11,7 @@ fetch("https://rickandmortyapi.com/api/character")
         
         for (let i = 0; i < data.results.length; i++) {
             personjaesRecorridos= personjaesRecorridos + `<article>
-                                <a href="./detalle.html?id=${data.results[i].id}">
+                ////////////////<a href="./detalle.html?id=${data.results[i].id}">///////////
                                 <img src=${data.results[i].image}>
                                 </a>
                                 <h2>${data.results[i].name}</h2>
