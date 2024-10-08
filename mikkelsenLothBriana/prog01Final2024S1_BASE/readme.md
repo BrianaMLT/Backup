@@ -1,0 +1,1 @@
+Usamos APIs de fake store api. https://fakestoreapi.com/docs
